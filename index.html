@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rob Maye</title>
+  <meta name="description" content="Rob Maye - Software Engineer based in Singapore">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #0A0A0A;
+      color: #FFFFFF;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #151515;
+      border: 1px solid #2A2A2A;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 480px;
+      overflow: hidden;
+    }
+
+    .photo {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .info {
+      padding: 24px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .tagline {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #888888;
+      text-align: center;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background-color: #444444;
+    }
+
+    .details {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .detail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .detail-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      font-weight: 600;
+      color: #666666;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .detail-value {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .time-value {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      background-color: #222222;
+      border-radius: 6px;
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+
+    .link-btn:hover {
+      background-color: #333333;
+    }
+
+    .link-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .email-copy {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      background-color: #1A1A1A;
+      border: 1px solid #333333;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .email-copy:hover {
+      background-color: #222222;
+      border-color: #444444;
+    }
+
+    .email-copy.copied {
+      border-color: #22D3EE;
+    }
+
+    .email-icon {
+      font-size: 14px;
+      color: #666666;
+    }
+
+    .email-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: #AAAAAA;
+    }
+
+    .copy-hint {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #555555;
+    }
+
+    .footer {
+      padding: 32px 0;
+      text-align: center;
+    }
+
+    .footer-text {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #555555;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 480px) {
+      body {
+        padding: 16px;
+      }
+
+      .card {
+        border-radius: 12px;
+      }
+
+      .info {
+        padding: 20px 24px;
+        gap: 16px;
+      }
+
+      .tagline {
+        font-size: 11px;
+      }
+
+      .details {
+        gap: 24px;
+      }
+
+      .detail-label {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+      }
+
+      .detail-value {
+        font-size: 13px;
+      }
+
+      .links {
+        gap: 12px;
+      }
+
+      .link-btn {
+        padding: 10px 14px;
+        font-size: 12px;
+        gap: 5px;
+      }
+
+      .link-btn svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      .email-copy {
+        padding: 8px 10px;
+        gap: 6px;
+      }
+
+      .email-text {
+        font-size: 12px;
+      }
+
+      .copy-hint {
+        font-size: 10px;
+      }
+
+      .footer {
+        padding: 24px 0;
+      }
+
+      .footer-text {
+        font-size: 10px;
+      }
+    }
+
+    /* Very small screens */
+    @media (max-width: 360px) {
+      .info {
+        padding: 16px 20px;
+      }
+
+      .details {
+        gap: 20px;
+      }
+
+      .link-btn {
+        padding: 8px 12px;
+        font-size: 11px;
+      }
+
+      .email-text {
+        font-size: 11px;
+      }
+
+      .copy-hint {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="photos/image.png" alt="Rob Maye" class="photo">
+    <div class="info">
+      <p class="tagline">// wanted for bad code and bad jokes</p>
+      <div class="divider"></div>
+      <div class="details">
+        <div class="detail">
+          <span class="detail-label">Location</span>
+          <span class="detail-value">Singapore</span>
+        </div>
+        <div class="detail">
+          <span class="detail-label">Local Time</span>
+          <span class="detail-value time-value" id="singapore-time">--:-- SGT</span>
+        </div>
+      </div>
+      <div class="links">
+        <a href="https://github.com/codersg2" target="_blank" rel="noopener noreferrer" class="link-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/robmaye/" target="_blank" rel="noopener noreferrer" class="link-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+      <div class="email-copy" onclick="copyEmail()" id="email-btn">
+        <span class="email-icon">✉</span>
+        <span class="email-text">rob@robmaye.me</span>
+        <span class="copy-hint" id="copy-hint">· tap to copy</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p class="footer-text">No tracking · No cookies · No criminal record</p>
+  </div>
+
+  <script>
+    function updateSingaporeTime() {
+      const now = new Date();
+      const options = {
+        timeZone: 'Asia/Singapore',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      };
+      const timeString = now.toLocaleTimeString('en-GB', options);
+      document.getElementById('singapore-time').textContent = timeString + ' SGT';
+    }
+
+    function copyEmail() {
+      const email = 'rob@robmaye.me';
+      navigator.clipboard.writeText(email).then(() => {
+        const btn = document.getElementById('email-btn');
+        const hint = document.getElementById('copy-hint');
+        btn.classList.add('copied');
+        hint.textContent = '· copied!';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          hint.textContent = '· tap to copy';
+        }, 2000);
+      });
+    }
+
+    // Update time immediately and then every 10 seconds
+    updateSingaporeTime();
+    setInterval(updateSingaporeTime, 10000);
+  </script>
+</body>
+</html>
