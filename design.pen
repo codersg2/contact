@@ -1,0 +1,2974 @@
+{
+  "version": "2.7",
+  "children": [
+    {
+      "type": "frame",
+      "id": "jrNEW",
+      "x": 412,
+      "y": 0,
+      "name": "Rob Maye Landing - Desktop",
+      "width": 1440,
+      "height": 900,
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "HT90c",
+          "name": "Content Card",
+          "width": 560,
+          "fill": "#1E293B",
+          "cornerRadius": 16,
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 48,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "HA0qU",
+              "name": "Clock Row",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "end",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FNvhl",
+                  "name": "clockLabel",
+                  "fill": "#64748B",
+                  "content": "Singapore",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "3zvQq",
+                  "name": "clockTime",
+                  "fill": "#94A3B8",
+                  "content": "21:07",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kVBl9",
+              "name": "Profile Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QohyR",
+                  "name": "Avatar",
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "eusandrotavares",
+                    "link": "https://unsplash.com/@eusandrotavares",
+                    "author": "Sandro Tavares"
+                  },
+                  "width": 96,
+                  "height": 96,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "photos/profile-photo-linkedin.jpeg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 48,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#22D3EE33"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#22D3EE33",
+                    "blur": 24
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "enn9T",
+                  "name": "nameText",
+                  "fill": "#FFFFFF",
+                  "content": "Rob Maye",
+                  "fontFamily": "Inter",
+                  "fontSize": 32,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "OuWmk",
+                  "name": "descriptorText",
+                  "fill": "#94A3B8",
+                  "content": "Software developer and IT lead, based in Singapore.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "P2xDd",
+              "name": "Microcopy",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Ek9ZI",
+                  "name": "micro1",
+                  "fill": "#64748B",
+                  "content": "If you received an email from rob@robmaye.me,",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                },
+                {
+                  "type": "text",
+                  "id": "czCyM",
+                  "name": "micro2",
+                  "fill": "#64748B",
+                  "content": "you're in the right place.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1S30l",
+              "name": "Email Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l43iW",
+                  "name": "Email Row",
+                  "fill": "#0F172A",
+                  "cornerRadius": 8,
+                  "gap": 12,
+                  "padding": [
+                    12,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "S0sPA",
+                      "name": "emailIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "mail",
+                      "iconFontFamily": "lucide",
+                      "fill": "#22D3EE"
+                    },
+                    {
+                      "type": "text",
+                      "id": "raHVi",
+                      "name": "emailText",
+                      "fill": "#FFFFFF",
+                      "content": "rob@robmaye.me",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DC5a8",
+                      "name": "Copy Button",
+                      "fill": "#22D3EE",
+                      "cornerRadius": 4,
+                      "gap": 6,
+                      "padding": [
+                        6,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "TiBM6",
+                          "name": "copyIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "copy",
+                          "iconFontFamily": "lucide",
+                          "fill": "#0A0F1C"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nREDx",
+                          "name": "copyText",
+                          "fill": "#0A0F1C",
+                          "content": "Copy",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qhBda",
+              "name": "Profile Links",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "frK8z",
+                  "name": "GitHub Link",
+                  "fill": "#0F172A",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#334155"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "xXbM9",
+                      "name": "githubIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "github",
+                      "iconFontFamily": "lucide",
+                      "fill": "#94A3B8"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TRN0P",
+                      "name": "githubText",
+                      "fill": "#94A3B8",
+                      "content": "GitHub",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kgB69",
+                  "name": "LinkedIn Link",
+                  "fill": "#0F172A",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#334155"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "3YMko",
+                      "name": "linkedinIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "linkedin",
+                      "iconFontFamily": "lucide",
+                      "fill": "#94A3B8"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1Iwu1",
+                      "name": "linkedinText",
+                      "fill": "#94A3B8",
+                      "content": "LinkedIn",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "U8RRm",
+          "name": "Footer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            24,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "fCFYo",
+              "name": "privacyText",
+              "fill": "#475569",
+              "content": "No tracking. No cookies.",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11,
+              "fontWeight": "500",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "7n99K",
+              "name": "copyrightText",
+              "fill": "#334155",
+              "content": "© Rob Maye",
+              "fontFamily": "Inter",
+              "fontSize": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "lMXgQ",
+      "x": 1279,
+      "y": 1026,
+      "name": "Rob Maye Landing - Mobile",
+      "width": 390,
+      "height": 844,
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "OmBsE",
+          "name": "Content Card",
+          "width": 342,
+          "fill": "#1E293B",
+          "cornerRadius": 16,
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            32,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zBuxM",
+              "name": "Clock Row",
+              "width": "fill_container",
+              "gap": 6,
+              "justifyContent": "end",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "EDHkK",
+                  "name": "mClockLabel",
+                  "fill": "#64748B",
+                  "content": "Singapore",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "sEXDq",
+                  "name": "mClockTime",
+                  "fill": "#94A3B8",
+                  "content": "21:07",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Bf7ZU",
+              "name": "Profile Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bFgrf",
+                  "name": "Avatar",
+                  "width": 72,
+                  "height": 72,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "photos/profile-photo-linkedin.jpeg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 36,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#22D3EE33"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#22D3EE22",
+                    "blur": 16
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "xoSKV",
+                  "name": "mNameText",
+                  "fill": "#FFFFFF",
+                  "content": "Rob Maye",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "NyfsT",
+                  "name": "mDescriptorText",
+                  "fill": "#94A3B8",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Software developer and IT lead, based in Singapore.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PrHUC",
+              "name": "Microcopy",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "A6Wy7",
+                  "name": "mMicro1",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "If you received an email from rob@robmaye.me,",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                },
+                {
+                  "type": "text",
+                  "id": "rV5Lr",
+                  "name": "mMicro2",
+                  "fill": "#64748B",
+                  "content": "you're in the right place.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "S6OGi",
+              "name": "Email Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tdl5C",
+                  "name": "Email Row",
+                  "fill": "#0F172A",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    10,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "un9ci",
+                      "name": "mEmailIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "mail",
+                      "iconFontFamily": "lucide",
+                      "fill": "#22D3EE"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zNpkE",
+                      "name": "mEmailText",
+                      "fill": "#FFFFFF",
+                      "content": "rob@robmaye.me",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Ck496",
+                      "name": "Copy Button",
+                      "fill": "#22D3EE",
+                      "cornerRadius": 4,
+                      "gap": 4,
+                      "padding": [
+                        5,
+                        8
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "W4K9f",
+                          "name": "mCopyIcon",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "copy",
+                          "iconFontFamily": "lucide",
+                          "fill": "#0A0F1C"
+                        },
+                        {
+                          "type": "text",
+                          "id": "30czH",
+                          "name": "mCopyText",
+                          "fill": "#0A0F1C",
+                          "content": "Copy",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PS28y",
+              "name": "Profile Links",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PHg3x",
+                  "name": "GitHub Link",
+                  "fill": "#0F172A",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#334155"
+                  },
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "JoYUY",
+                      "name": "mGithubIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "github",
+                      "iconFontFamily": "lucide",
+                      "fill": "#94A3B8"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LDjNy",
+                      "name": "mGithubText",
+                      "fill": "#94A3B8",
+                      "content": "GitHub",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tIrEb",
+                  "name": "LinkedIn Link",
+                  "fill": "#0F172A",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#334155"
+                  },
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "gJGP6",
+                      "name": "mLinkedinIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "linkedin",
+                      "iconFontFamily": "lucide",
+                      "fill": "#94A3B8"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jmNNk",
+                      "name": "mLinkedinText",
+                      "fill": "#94A3B8",
+                      "content": "LinkedIn",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZAPB2",
+          "name": "Footer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 6,
+          "padding": [
+            20,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "B9YSb",
+              "name": "mPrivacyText",
+              "fill": "#475569",
+              "content": "No tracking. No cookies.",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10,
+              "fontWeight": "500",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "WQ1cY",
+              "name": "mCopyrightText",
+              "fill": "#334155",
+              "content": "© Rob Maye",
+              "fontFamily": "Inter",
+              "fontSize": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "XNSig",
+      "x": 2500,
+      "y": 0,
+      "name": "Rob Maye Landing - Desktop Alt",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#030712",
+      "layout": "none",
+      "children": [
+        {
+          "type": "ellipse",
+          "id": "d6vT7",
+          "x": -200,
+          "y": 0,
+          "name": "BG Glow 1",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "opacity": 0.4,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0891B2",
+                "position": 0
+              },
+              {
+                "color": "#0891B200",
+                "position": 1
+              }
+            ]
+          },
+          "width": 900,
+          "height": 900
+        },
+        {
+          "type": "ellipse",
+          "id": "6TZqd",
+          "x": 800,
+          "y": 200,
+          "name": "BG Glow 2",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "opacity": 0.3,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#7C3AED",
+                "position": 0
+              },
+              {
+                "color": "#7C3AED00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 800,
+          "height": 800
+        },
+        {
+          "type": "ellipse",
+          "id": "SZK3X",
+          "x": 500,
+          "y": -200,
+          "name": "BG Glow 3",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "opacity": 0.2,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22D3EE",
+                "position": 0
+              },
+              {
+                "color": "#22D3EE00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 600,
+          "height": 600
+        },
+        {
+          "type": "frame",
+          "id": "9hbBS",
+          "x": 120,
+          "y": 150,
+          "name": "Main Content",
+          "width": 1200,
+          "height": 600,
+          "gap": 80,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RwD5C",
+              "name": "Left Column",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aetxA",
+                  "name": "Clock Badge",
+                  "fill": "#FFFFFF10",
+                  "cornerRadius": 100,
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "4Gyht",
+                      "name": "clockIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "map-pin",
+                      "iconFontFamily": "lucide",
+                      "fill": "#22D3EE"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pFgCE",
+                      "name": "clockLabel",
+                      "fill": "#94A3B8",
+                      "content": "Singapore",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nIueW",
+                      "name": "clockDot",
+                      "fill": "#475569",
+                      "content": "·",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "asmm9",
+                      "name": "clockTime",
+                      "fill": "#22D3EE",
+                      "content": "21:07",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VY2Wv",
+                  "name": "Name Section",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "1atEz",
+                      "name": "nameText",
+                      "fill": "#FFFFFF",
+                      "content": "Rob Maye",
+                      "fontFamily": "Inter",
+                      "fontSize": 72,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "lS0qH",
+                      "name": "descriptorText",
+                      "fill": "#94A3B8",
+                      "content": "Software developer and IT lead,\nbased in Singapore.",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 24
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "q1kle",
+                  "name": "microcopy",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 450,
+                  "content": "If you received an email from rob@robmaye.me, you're in the right place.",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "PLz5Z",
+                  "name": "Actions",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Nrt32",
+                      "name": "Email Button",
+                      "fill": "#22D3EE",
+                      "cornerRadius": 8,
+                      "gap": 10,
+                      "padding": [
+                        14,
+                        24
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "EIKch",
+                          "name": "emailIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "#030712"
+                        },
+                        {
+                          "type": "text",
+                          "id": "JCxzb",
+                          "name": "emailText",
+                          "fill": "#030712",
+                          "content": "rob@robmaye.me",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vfo1N",
+                      "name": "GitHub",
+                      "fill": "#FFFFFF10",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFFFFF20"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "EH3X6",
+                          "name": "githubIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "github",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Cofgd",
+                          "name": "githubText",
+                          "fill": "#FFFFFF",
+                          "content": "GitHub",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "5kP7J",
+                      "name": "LinkedIn",
+                      "fill": "#FFFFFF10",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#FFFFFF20"
+                      },
+                      "gap": 8,
+                      "padding": [
+                        14,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "KTY5E",
+                          "name": "linkedinIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zz2eR",
+                          "name": "linkedinText",
+                          "fill": "#FFFFFF",
+                          "content": "LinkedIn",
+                          "fontFamily": "Inter",
+                          "fontSize": 15,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rUcPQ",
+              "name": "Right Column",
+              "width": 400,
+              "height": 500,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "TtSZ1",
+                  "x": 10,
+                  "y": 60,
+                  "name": "Photo Ring",
+                  "width": 380,
+                  "height": 380,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": {
+                      "type": "gradient",
+                      "gradientType": "angular",
+                      "enabled": true,
+                      "rotation": 0,
+                      "size": {
+                        "width": 1,
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#22D3EE",
+                          "position": 0
+                        },
+                        {
+                          "color": "#7C3AED",
+                          "position": 0.5
+                        },
+                        {
+                          "color": "#22D3EE",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "ellipse",
+                  "id": "h629l",
+                  "x": 40,
+                  "y": 90,
+                  "name": "Photo Glow",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "radial",
+                    "enabled": true,
+                    "rotation": 0,
+                    "size": {
+                      "width": 1,
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#22D3EE40",
+                        "position": 0
+                      },
+                      {
+                        "color": "#22D3EE00",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 320,
+                  "height": 320
+                },
+                {
+                  "type": "frame",
+                  "id": "Ai5gs",
+                  "x": 50,
+                  "y": 100,
+                  "name": "Photo",
+                  "width": 300,
+                  "height": 300,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "photos/profile-photo-linkedin.jpeg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 150
+                },
+                {
+                  "type": "ellipse",
+                  "id": "fZXS3",
+                  "x": 20,
+                  "y": 40,
+                  "name": "Decor 1",
+                  "fill": "#22D3EE",
+                  "width": 12,
+                  "height": 12
+                },
+                {
+                  "type": "ellipse",
+                  "id": "NFlnZ",
+                  "x": 370,
+                  "y": 120,
+                  "name": "Decor 2",
+                  "fill": "#7C3AED",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "M3Jd1",
+                  "x": 380,
+                  "y": 400,
+                  "name": "Decor 3",
+                  "fill": "#22D3EE80",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "rectangle",
+                  "id": "AV1vu",
+                  "x": 0,
+                  "y": 470,
+                  "name": "Decor Line",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 90,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#22D3EE",
+                        "position": 0
+                      },
+                      {
+                        "color": "#22D3EE00",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 60,
+                  "height": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KKBsm",
+          "x": 120,
+          "y": 820,
+          "name": "Footer",
+          "width": 1200,
+          "gap": 24,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "smCSQ",
+              "name": "privacyText",
+              "fill": "#475569",
+              "content": "No tracking. No cookies.",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "mbnjV",
+              "name": "copyrightText",
+              "fill": "#334155",
+              "content": "© Rob Maye",
+              "fontFamily": "Inter",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "1dSpg",
+      "x": 2500,
+      "y": 0,
+      "name": "Desktop - Light Personal",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#FAFAF9",
+      "layout": "none",
+      "children": [
+        {
+          "type": "path",
+          "id": "GIvp0",
+          "x": 0,
+          "y": 600,
+          "name": "Yorkshire Hills",
+          "geometry": "M0 300q200-150 400-100 200-100 400-20l0 120z",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "opacity": 0.6,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#8B9A6B",
+                "position": 0
+              },
+              {
+                "color": "#A8B892",
+                "position": 0.5
+              },
+              {
+                "color": "#C9D4BC00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 800,
+          "height": 300
+        },
+        {
+          "type": "path",
+          "id": "d4Q9G",
+          "x": 640,
+          "y": 550,
+          "name": "Singapore Warmth",
+          "geometry": "M0 350q150-150 350-100 200-100 350-30 80-40 100-20l0 150z",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "opacity": 0.5,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#E07A5F",
+                "position": 0
+              },
+              {
+                "color": "#F2CC8F",
+                "position": 0.5
+              },
+              {
+                "color": "#F4E8D100",
+                "position": 1
+              }
+            ]
+          },
+          "width": 800,
+          "height": 350
+        },
+        {
+          "type": "path",
+          "id": "CxYhE",
+          "x": 900,
+          "y": 0,
+          "name": "Sky Accent",
+          "geometry": "M0 0l540 0 0 100q-140 100-340 50-150-30-200-70z",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "opacity": 0.3,
+            "rotation": 90,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#81B29A",
+                "position": 0
+              },
+              {
+                "color": "#81B29A00",
+                "position": 1
+              }
+            ]
+          },
+          "width": 540,
+          "height": 200
+        },
+        {
+          "type": "frame",
+          "id": "ftrqo",
+          "x": 120,
+          "y": 180,
+          "name": "Main Content",
+          "width": 1200,
+          "height": 500,
+          "gap": 100,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "PrbtD",
+              "name": "Left Column",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VhaU3",
+                  "name": "Tagline",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fUzTX",
+                      "name": "tagYorkshire",
+                      "fill": "#8B9A6B",
+                      "content": "Yorkshire",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "IDNpj",
+                      "name": "tagDot1",
+                      "fill": "#94A3B8",
+                      "content": "→",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yvNCF",
+                      "name": "tagSingapore",
+                      "fill": "#E07A5F",
+                      "content": "Singapore",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "mM7Ke",
+                      "name": "tagDot2",
+                      "fill": "#94A3B8",
+                      "content": "→",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "t5SfZ",
+                      "name": "tagCode",
+                      "fill": "#3D405B",
+                      "content": "Code",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "QsI0P",
+                  "name": "nameText",
+                  "fill": "#1C1917",
+                  "content": "Rob Maye",
+                  "fontFamily": "Inter",
+                  "fontSize": 72,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "ThHDC",
+                  "name": "descriptorText",
+                  "fill": "#57534E",
+                  "content": "Software developer and IT lead,\nbased in Singapore.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 22
+                },
+                {
+                  "type": "text",
+                  "id": "kprHF",
+                  "name": "microcopy",
+                  "fill": "#78716C",
+                  "textGrowth": "fixed-width",
+                  "width": 400,
+                  "content": "If you received an email from rob@robmaye.me, you're in the right place.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 15
+                },
+                {
+                  "type": "frame",
+                  "id": "KCDc5",
+                  "name": "Actions",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "toYyb",
+                      "name": "Email Button",
+                      "fill": "#3D405B",
+                      "cornerRadius": 8,
+                      "gap": 8,
+                      "padding": [
+                        12,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "EuUFQ",
+                          "name": "emailIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "mail",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "V4Dh6",
+                          "name": "emailText",
+                          "fill": "#FFFFFF",
+                          "content": "rob@robmaye.me",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Hj61n",
+                      "name": "GitHub",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#D6D3D1"
+                      },
+                      "gap": 6,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "gSBe1",
+                          "name": "githubIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "github",
+                          "iconFontFamily": "lucide",
+                          "fill": "#57534E"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UxgVh",
+                          "name": "githubText",
+                          "fill": "#57534E",
+                          "content": "GitHub",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U1p4d",
+                      "name": "LinkedIn",
+                      "cornerRadius": 8,
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "#D6D3D1"
+                      },
+                      "gap": 6,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "1IYma",
+                          "name": "linkedinIcon",
+                          "width": 18,
+                          "height": 18,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#57534E"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PsMRk",
+                          "name": "linkedinText",
+                          "fill": "#57534E",
+                          "content": "LinkedIn",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dbBA9",
+              "name": "Right Column",
+              "width": 420,
+              "height": 450,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "Csvrh",
+                  "x": 50,
+                  "y": 65,
+                  "name": "Photo BG",
+                  "fill": {
+                    "type": "gradient",
+                    "gradientType": "linear",
+                    "enabled": true,
+                    "rotation": 135,
+                    "size": {
+                      "height": 1
+                    },
+                    "colors": [
+                      {
+                        "color": "#8B9A6B40",
+                        "position": 0
+                      },
+                      {
+                        "color": "#E07A5F40",
+                        "position": 1
+                      }
+                    ]
+                  },
+                  "width": 320,
+                  "height": 320
+                },
+                {
+                  "type": "frame",
+                  "id": "2yPJo",
+                  "x": 70,
+                  "y": 85,
+                  "name": "Photo",
+                  "width": 280,
+                  "height": 280,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "photos/profile-photo-linkedin.jpeg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 140,
+                  "stroke": {
+                    "thickness": 4,
+                    "fill": "#FFFFFF"
+                  },
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#0000001A",
+                    "offset": {
+                      "x": 0,
+                      "y": 8
+                    },
+                    "blur": 30
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ovD9w",
+          "x": 1180,
+          "y": 40,
+          "name": "Clock",
+          "fill": "#FFFFFF",
+          "cornerRadius": 100,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#0000000D",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 8
+          },
+          "gap": 8,
+          "padding": [
+            10,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "5mx5G",
+              "name": "clockIcon",
+              "width": 14,
+              "height": 14,
+              "iconFontName": "map-pin",
+              "iconFontFamily": "lucide",
+              "fill": "#E07A5F"
+            },
+            {
+              "type": "text",
+              "id": "Lpm3S",
+              "name": "clockLabel",
+              "fill": "#57534E",
+              "content": "Singapore",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "yh3uC",
+              "name": "clockTime",
+              "fill": "#3D405B",
+              "content": "21:07",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 13,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "1xDWM",
+          "x": 60,
+          "y": 60,
+          "name": "Code Decoration",
+          "fill": "#3D405B15",
+          "content": "fn main() {\n    println!(\"Hello, world!\");\n}",
+          "lineHeight": 1.6,
+          "fontFamily": "JetBrains Mono",
+          "fontSize": 11
+        },
+        {
+          "type": "frame",
+          "id": "elijh",
+          "x": 120,
+          "y": 830,
+          "name": "Footer",
+          "width": 1200,
+          "gap": 24,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "V4UAe",
+              "name": "privacyText",
+              "fill": "#A8A29E",
+              "content": "No tracking · No cookies",
+              "fontFamily": "Inter",
+              "fontSize": 12
+            },
+            {
+              "type": "text",
+              "id": "3MzSx",
+              "name": "copyrightText",
+              "fill": "#A8A29E",
+              "content": "© Rob Maye",
+              "fontFamily": "Inter",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BuRJx",
+      "x": 4100,
+      "y": 0,
+      "name": "Desktop - Graphical Photos",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#0F0F0F",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "aAeI4",
+          "x": 0,
+          "y": 0,
+          "name": "Singapore Photo",
+          "metadata": {
+            "type": "unsplash",
+            "username": "newtpotion",
+            "link": "https://unsplash.com/@newtpotion",
+            "author": "Chuan"
+          },
+          "clip": true,
+          "width": 500,
+          "height": 900,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1570422849852-adf15f981007?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzA4MTQxMjJ8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "1qlyR",
+              "name": "Overlay",
+              "width": 500,
+              "height": 900,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 270,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0F0F0F00",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0F0F0F00",
+                    "position": 0.75
+                  },
+                  {
+                    "color": "#0F0F0F10",
+                    "position": 0.85
+                  },
+                  {
+                    "color": "#0F0F0F40",
+                    "position": 0.92
+                  },
+                  {
+                    "color": "#0F0F0F90",
+                    "position": 0.97
+                  },
+                  {
+                    "color": "#0F0F0F",
+                    "position": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wfcxv",
+          "x": 970,
+          "y": 0,
+          "name": "UK Photo",
+          "metadata": {
+            "type": "unsplash",
+            "username": "sophieemeny",
+            "link": "https://unsplash.com/@sophieemeny",
+            "author": "Sophie Emeny"
+          },
+          "clip": true,
+          "width": 500,
+          "height": 900,
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "https://images.unsplash.com/photo-1628771831391-198157765892?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzA4MTQxODd8&ixlib=rb-4.1.0&q=80&w=1080",
+            "mode": "fill"
+          },
+          "children": [
+            {
+              "type": "frame",
+              "id": "mvyga",
+              "name": "Overlay",
+              "width": 500,
+              "height": 900,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 270,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#0F0F0F",
+                    "position": 0
+                  },
+                  {
+                    "color": "#0F0F0F90",
+                    "position": 0.03
+                  },
+                  {
+                    "color": "#0F0F0F40",
+                    "position": 0.08
+                  },
+                  {
+                    "color": "#0F0F0F10",
+                    "position": 0.15
+                  },
+                  {
+                    "color": "#0F0F0F00",
+                    "position": 0.25
+                  },
+                  {
+                    "color": "#0F0F0F00",
+                    "position": 1
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jZcUZ",
+          "x": 420,
+          "y": 100,
+          "name": "Center Content",
+          "width": 600,
+          "height": 700,
+          "layout": "vertical",
+          "gap": 32,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XLmcr",
+              "name": "Photo Container",
+              "width": 200,
+              "height": 200,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "iQ31l",
+                  "x": 0,
+                  "y": 0,
+                  "name": "Photo Border",
+                  "width": 200,
+                  "height": 200,
+                  "stroke": {
+                    "thickness": 3,
+                    "fill": {
+                      "type": "gradient",
+                      "gradientType": "angular",
+                      "enabled": true,
+                      "rotation": 0,
+                      "size": {
+                        "width": 1,
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#8B9A6B",
+                          "position": 0
+                        },
+                        {
+                          "color": "#E07A5F",
+                          "position": 0.5
+                        },
+                        {
+                          "color": "#22D3EE",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "GoPKl",
+                  "x": 10,
+                  "y": 10,
+                  "name": "Photo",
+                  "width": 180,
+                  "height": 180,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "photos/profile-photo-linkedin.jpeg",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 90
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TaNoL",
+              "name": "Text Section",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "qVCXp",
+                  "name": "nameText",
+                  "fill": "#FFFFFF",
+                  "content": "Rob Maye",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 56,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "9K5py",
+                  "name": "descriptorText",
+                  "fill": "#A1A1AA",
+                  "content": "Software developer and IT lead",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 20
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CB42O",
+              "name": "Email Section",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4VYn7",
+                  "name": "Email Row New",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gU8gH",
+                      "name": "emailText",
+                      "fill": "#FFFFFF",
+                      "content": "rob@robmaye.me",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zElcd",
+                      "name": "Copy Button",
+                      "fill": "#22D3EE",
+                      "cornerRadius": 6,
+                      "gap": 6,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "VzPl8",
+                          "name": "copyIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "copy",
+                          "iconFontFamily": "lucide",
+                          "fill": "#0F0F0F"
+                        },
+                        {
+                          "type": "text",
+                          "id": "GyIzK",
+                          "name": "copyText",
+                          "fill": "#0F0F0F",
+                          "content": "Copy",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "VYATO",
+                  "name": "Links Row",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vszGg",
+                      "name": "GitHub",
+                      "fill": "transparent",
+                      "cornerRadius": 6,
+                      "gap": 6,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "cveEW",
+                          "name": "githubIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "github",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zIaps",
+                          "name": "githubText",
+                          "fill": "#FFFFFF",
+                          "content": "GitHub",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A69G1",
+                      "name": "LinkedIn",
+                      "fill": "transparent",
+                      "cornerRadius": 6,
+                      "gap": 6,
+                      "padding": [
+                        8,
+                        12
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Ot2Gt",
+                          "name": "linkedinIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#FFFFFF"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dVXfn",
+                          "name": "linkedinText",
+                          "fill": "#FFFFFF",
+                          "content": "LinkedIn",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ndBkj",
+          "x": 30,
+          "y": 30,
+          "name": "Yorkshire Label",
+          "fill": "#00000000",
+          "cornerRadius": 6,
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            12,
+            16
+          ],
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "FAoJA",
+              "name": "yorkshireLabelIcon",
+              "width": 14,
+              "height": 14,
+              "iconFontName": "building-2",
+              "iconFontFamily": "lucide",
+              "fill": "#FFFFFF"
+            },
+            {
+              "type": "text",
+              "id": "cBeqa",
+              "name": "yorkshireLabelText",
+              "fill": "#FFFFFF",
+              "content": "Singapore",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "l0JRK",
+              "name": "sgTimeNew",
+              "fill": "#FFFFFF",
+              "content": "21:07",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 48,
+              "fontWeight": "300",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "XOkVP",
+              "name": "utcOffset",
+              "fill": "#FFFFFF80",
+              "content": "SGT (UTC+8)",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 10
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8HDKp",
+          "x": 1240,
+          "y": 30,
+          "name": "Singapore Label",
+          "fill": "#FFFFFF00",
+          "cornerRadius": 6,
+          "effect": {
+            "type": "background_blur",
+            "radius": 10
+          },
+          "layout": "vertical",
+          "gap": 4,
+          "padding": [
+            12,
+            16
+          ],
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "423ex",
+              "name": "singaporeLabelIcon",
+              "width": 14,
+              "height": 14,
+              "iconFontName": "mountain",
+              "iconFontFamily": "lucide",
+              "fill": "#1C1917"
+            },
+            {
+              "type": "text",
+              "id": "7rCvx",
+              "name": "singaporeLabelText",
+              "fill": "#1C1917",
+              "content": "UK",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "fQi5b",
+              "name": "ukTimeNew",
+              "fill": "#1C1917",
+              "content": "13:07",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 48,
+              "fontWeight": "300",
+              "letterSpacing": -2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "370se",
+          "x": 520,
+          "y": 860,
+          "name": "Footer",
+          "width": 400,
+          "gap": 24,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "F3MVZ",
+              "name": "privacyText",
+              "fill": "#52525B",
+              "content": "No tracking · No cookies",
+              "fontFamily": "Inter",
+              "fontSize": 11
+            },
+            {
+              "type": "text",
+              "id": "N7QX4",
+              "name": "copyrightText",
+              "fill": "#52525B",
+              "content": "© Rob Maye",
+              "fontFamily": "Inter",
+              "fontSize": 11
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "q1Gi0",
+          "x": 80,
+          "y": 780,
+          "name": "Code Brackets",
+          "gap": 8,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "VUbrl",
+              "name": "openBracket",
+              "fill": "#E07A5F20",
+              "content": "<",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 48,
+              "fontWeight": "300"
+            },
+            {
+              "type": "text",
+              "id": "fHOy8",
+              "name": "slashBracket",
+              "fill": "#E07A5F15",
+              "content": "/",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 48,
+              "fontWeight": "300"
+            },
+            {
+              "type": "text",
+              "id": "F9ZIE",
+              "name": "closeBracket",
+              "fill": "#E07A5F20",
+              "content": ">",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 48,
+              "fontWeight": "300"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pMojI",
+          "x": 1280,
+          "y": 780,
+          "name": "Code Braces",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "f8mWl",
+              "name": "openBrace",
+              "fill": "#8B9A6B20",
+              "content": "{",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 48,
+              "fontWeight": "300"
+            },
+            {
+              "type": "text",
+              "id": "8hXQg",
+              "name": "closeBrace",
+              "fill": "#8B9A6B20",
+              "content": "}",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 48,
+              "fontWeight": "300"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "WfikN",
+      "x": 5700,
+      "y": 0,
+      "name": "Desktop - Contact Card",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#0A0A0A",
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "5WbFx",
+          "name": "Card",
+          "clip": true,
+          "width": 480,
+          "fill": "#151515",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2A2A2A"
+          },
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ibru7",
+              "name": "Photo",
+              "width": 480,
+              "height": 480,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "photos/image.png",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "sBcmN",
+              "name": "Info Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                24,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "bDCeq",
+                  "name": "tagline",
+                  "fill": "#888888",
+                  "content": "// wanted for bad code and bad jokes",
+                  "textAlign": "center",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "rectangle",
+                  "id": "fhouL",
+                  "name": "divider",
+                  "fill": "#444444",
+                  "width": 60,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "OYGww",
+                  "name": "Details",
+                  "gap": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "kjwHI",
+                      "name": "locationDetail",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yNHgg",
+                          "name": "locationLabel",
+                          "fill": "#666666",
+                          "content": "LOCATION",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "o67EL",
+                          "name": "locationValue",
+                          "fill": "#FFFFFF",
+                          "content": "Singapore",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HL2ch",
+                      "name": "timeDetail",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "32tNm",
+                          "name": "timeLabel",
+                          "fill": "#666666",
+                          "content": "LOCAL TIME",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "Ut5qT",
+                          "name": "timeValue",
+                          "fill": "#FFFFFF",
+                          "content": "21:07 SGT",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RTqjj",
+                  "name": "Links",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zxwo5",
+                      "name": "githubLink",
+                      "fill": "#222222",
+                      "cornerRadius": 6,
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "uR1Hh",
+                          "name": "githubIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "github",
+                          "iconFontFamily": "lucide",
+                          "fill": "#888888"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UiEAN",
+                          "name": "githubText",
+                          "fill": "#888888",
+                          "content": "GitHub",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "txxYM",
+                      "name": "linkedinLink",
+                      "fill": "#222222",
+                      "cornerRadius": 6,
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "AAtIV",
+                          "name": "linkedinIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#888888"
+                        },
+                        {
+                          "type": "text",
+                          "id": "maaN4",
+                          "name": "linkedinText",
+                          "fill": "#888888",
+                          "content": "LinkedIn",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "URYCn",
+                  "name": "emailCopy",
+                  "fill": "#1A1A1A",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nsjDV",
+                      "name": "emailIcon",
+                      "fill": "#666666",
+                      "content": "✉",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "W3R0p",
+                      "name": "emailText",
+                      "fill": "#AAAAAA",
+                      "content": "rob@robmaye.me",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "8YWP0",
+                      "name": "copyHint",
+                      "fill": "#555555",
+                      "content": "· tap to copy",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jU1qt",
+          "name": "Footer",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            32,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Uwm4Y",
+              "name": "privacyText",
+              "fill": "#555555",
+              "content": "No tracking · No cookies · No criminal record",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "cMOwy",
+      "x": 7240,
+      "y": 0,
+      "name": "Mobile - Contact Card",
+      "clip": true,
+      "width": 390,
+      "height": 844,
+      "fill": "#0A0A0A",
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "KtAys",
+          "name": "Card",
+          "clip": true,
+          "width": "fill_container",
+          "fill": "#151515",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2A2A2A"
+          },
+          "layout": "vertical",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "AXrJu",
+              "name": "Photo",
+              "width": "fill_container",
+              "height": 358,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "photos/image.png",
+                "mode": "fill"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "nZmmG",
+              "name": "Info Section",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                24,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5H0cY",
+                  "name": "tagline",
+                  "fill": "#888888",
+                  "content": "// wanted for bad code and bad jokes",
+                  "textAlign": "center",
+                  "fontFamily": "JetBrains Mono",
+                  "fontSize": 12
+                },
+                {
+                  "type": "rectangle",
+                  "id": "y1ur5",
+                  "name": "divider",
+                  "fill": "#444444",
+                  "width": 60,
+                  "height": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "iVU9S",
+                  "name": "Details",
+                  "gap": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2CE58",
+                      "name": "locationDetail",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MYUBp",
+                          "name": "locationLabel",
+                          "fill": "#666666",
+                          "content": "LOCATION",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "WEW1C",
+                          "name": "locationValue",
+                          "fill": "#FFFFFF",
+                          "content": "Singapore",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HU7rs",
+                      "name": "timeDetail",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "36LcL",
+                          "name": "timeLabel",
+                          "fill": "#666666",
+                          "content": "LOCAL TIME",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "pVrib",
+                          "name": "timeValue",
+                          "fill": "#FFFFFF",
+                          "content": "21:07 SGT",
+                          "fontFamily": "JetBrains Mono",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "e8XwW",
+                  "name": "Links",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "3GSL6",
+                      "name": "githubLink",
+                      "fill": "#222222",
+                      "cornerRadius": 6,
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "O2g3A",
+                          "name": "githubIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "github",
+                          "iconFontFamily": "lucide",
+                          "fill": "#888888"
+                        },
+                        {
+                          "type": "text",
+                          "id": "omnEC",
+                          "name": "githubText",
+                          "fill": "#888888",
+                          "content": "GitHub",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I3kvX",
+                      "name": "linkedinLink",
+                      "fill": "#222222",
+                      "cornerRadius": 6,
+                      "gap": 6,
+                      "padding": [
+                        10,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "iIsjJ",
+                          "name": "linkedinIcon",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#888888"
+                        },
+                        {
+                          "type": "text",
+                          "id": "dBpKV",
+                          "name": "linkedinText",
+                          "fill": "#888888",
+                          "content": "LinkedIn",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NqrAe",
+                  "name": "emailCopy",
+                  "fill": "#1A1A1A",
+                  "cornerRadius": 6,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#333333"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    8,
+                    12
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "O8Fm2",
+                      "name": "emailIcon",
+                      "fill": "#666666",
+                      "content": "✉",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "c46kU",
+                      "name": "emailText",
+                      "fill": "#AAAAAA",
+                      "content": "rob@robmaye.me",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "qXfdq",
+                      "name": "copyHint",
+                      "fill": "#555555",
+                      "content": "· tap to copy",
+                      "fontFamily": "JetBrains Mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "I7SXR",
+          "name": "Footer",
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            32,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Wo1uv",
+              "name": "privacyText",
+              "fill": "#555555",
+              "content": "No tracking · No cookies · No criminal record",
+              "fontFamily": "JetBrains Mono",
+              "fontSize": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

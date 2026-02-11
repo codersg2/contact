@@ -1,0 +1,132 @@
+rob@robmaye:~$ boot
+[  0.000000] robOS 26.2 (contact-card) starting...
+[  0.003131] Initializing sarcasm subsystem... ok
+[  0.004206] Loading modules: git, coffee, docker, regex, questionable_humour... ok
+[  0.006900] Mounting /dev/patience (read-only)... ok
+[  0.009001] Applying patch: "works on my machine"... denied
+[  0.012345] Starting services:
+             - api: listening (but only if you sent the right headers)
+             - sql: ready to index your feelings
+             - logs: enabled (because obviously)
+[  0.018888] Warning: unknown device detected: "printer"
+[  0.020024] Printer driver missing: yes. still. forever.
+[  0.024000] Ready.
+
+rob@robmaye:~$ whoami
+rob
+Head of IT / software dev
+wanted for: bad code and bad jokes
+
+rob@robmaye:~$ status
+uptime: too long
+sleep: deprecated
+meetings: escalating
+excuses: caching disabled
+merge conflicts: thriving
+
+rob@robmaye:~$ ls -la
+drwxr-xr-x  contact/
+drwxr-xr-x  projects/
+drwxr-xr-x  tools/
+-rw-------  secrets.txt        (nice try)
+-rw-r--r--  README.md
+-rw-r--r--  todo.txt
+
+rob@robmaye:~$ cat README.md
+Hi. I build systems that mostly behave.
+If it broke, it was DNS.
+If it wasn’t DNS, it was still DNS.
+
+rob@robmaye:~$ cat todo.txt
+[ ] fix one tiny thing
+[ ] accidentally refactor everything
+[ ] pretend it was planned
+
+rob@robmaye:~$ git status
+On branch: main
+Your branch is ahead by 3 commits and 1 regrettable decision.
+nothing to commit, working tree clean (suspicious)
+
+rob@robmaye:~$ make coffee
+make: *** No rule to make target 'coffee'. Stop.
+hint: have you tried turning yourself off and on again?
+
+rob@robmaye:~$ docker ps
+CONTAINER ID   NAME              STATUS
+a1b2c3d4e5f6   prod              Up (somehow)
+deadbeefcafe   staging           Up (lying)
+f00dbabe1337   "quick-fix"       Restarting (forever)
+
+rob@robmaye:~$ curl -s https://life
+curl: (28) Operation timed out after 30m: meeting extended
+
+rob@robmaye:~$ help
+available commands:
+- about
+- contact
+- skills
+- joke
+- fortune
+- clear
+- selfdestruct
+- exit
+
+rob@robmaye:~$ about
+I like clean architecture, ugly truths, and logs with timestamps.
+I dislike: vague tickets, mystery requirements, and "can we hop on a quick call".
+
+rob@robmaye:~$ skills
+C#        : yes
+SQL       : yes (and I will judge your indexes)
+Python    : yes (but I’ll still make it a CLI)
+Docker    : yes
+CSS       : I know enough to be dangerous
+
+rob@robmaye:~$ joke
+There are 10 types of people:
+those who understand binary, and those who also understand that this joke is ancient.
+
+rob@robmaye:~$ fortune
+You will fix the bug by adding one line.
+Later you will discover what that line actually did.
+
+rob@robmaye:~$ contact
+email: rob@robmaye.me
+github: click the icon like a normal person
+linkedin: if you must
+
+rob@robmaye:~$ clear
+(terminal cleared)
+
+rob@robmaye:~$ selfdestruct
+This will delete absolutely everything (emotionally).
+Are you sure? (y/N) y
+Are you really sure? (y/N) y
+Ok. Last chance. Type YES to continue: YES
+
+[  1%] deleting: ./todo.txt
+[  4%] deleting: ./quick-fix-final-v7-really-final.sql
+[  7%] deleting: ./prod-config (why is this here)
+[ 12%] deleting: ./meeting-notes (good)
+[ 18%] deleting: ./css (nobody will miss it)
+[ 25%] deleting: ./docker (it'll be back in 5 minutes)
+[ 33%] deleting: ./README.md (bold move)
+[ 41%] deleting: ./unit-tests (couldn't find any)
+[ 49%] deleting: ./good-ideas (none detected)
+[ 57%] deleting: ./patience
+[ 63%] deleting: ./calendar (freed 8 hours)
+[ 71%] deleting: ./git-history (sorry)
+[ 79%] deleting: ./last-working-version (tragic)
+[ 86%] deleting: ./confidence (not enough space)
+[ 93%] deleting: ./production (again)
+[ 99%] deleting: ./feelings
+
+no no no cancel cancel cancel
+^C^C^C^C^C^C^C^C^C
+SIGINT ignored: confidence level too high
+^C^C^C^C^C
+selfdestruct: continuing (because of course it is)
+
+kernel: panic: user has learned nothing
+terminal: segmentation fault (core dumped)
+Connection closed.

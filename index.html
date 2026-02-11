@@ -43,6 +43,42 @@
       display: block;
     }
 
+    .photo.corrupted {
+      animation: glitch 0.3s infinite;
+      filter: saturate(1.5) contrast(1.2);
+    }
+
+    @keyframes glitch {
+      0% {
+        transform: translate(0);
+        filter: saturate(1.5) contrast(1.2) hue-rotate(0deg);
+      }
+      20% {
+        transform: translate(-2px, 1px);
+        filter: saturate(2) contrast(1.3) hue-rotate(10deg);
+        clip-path: inset(20% 0 30% 0);
+      }
+      40% {
+        transform: translate(2px, -1px);
+        filter: saturate(1.2) contrast(1.5) hue-rotate(-5deg);
+        clip-path: inset(50% 0 20% 0);
+      }
+      60% {
+        transform: translate(-1px, 2px);
+        filter: saturate(1.8) contrast(1.1) hue-rotate(5deg);
+        clip-path: inset(10% 0 60% 0);
+      }
+      80% {
+        transform: translate(1px, -2px);
+        filter: saturate(1.3) contrast(1.4) hue-rotate(-10deg);
+        clip-path: inset(40% 0 10% 0);
+      }
+      100% {
+        transform: translate(0);
+        filter: saturate(1.5) contrast(1.2) hue-rotate(0deg);
+      }
+    }
+
     .info {
       padding: 24px 32px;
       display: flex;
@@ -173,6 +209,140 @@
       color: #555555;
     }
 
+    /* Terminal Button */
+    .terminal-row {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+    }
+
+    .terminal-btn {
+      width: 28px;
+      height: 28px;
+      background-color: #1A1A1A;
+      border: 1px solid #333333;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .terminal-btn:hover {
+      background-color: #222222;
+      border-color: #444444;
+    }
+
+    .terminal-btn svg {
+      width: 14px;
+      height: 14px;
+      stroke: #555555;
+      fill: none;
+    }
+
+    /* Terminal Overlay */
+    .terminal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .terminal-overlay.active {
+      display: flex;
+    }
+
+    .terminal-window {
+      width: 520px;
+      max-width: calc(100% - 32px);
+      height: 400px;
+      background-color: #0D0D0D;
+      border: 1px solid #333333;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 12px;
+      height: 36px;
+      background-color: #1A1A1A;
+      border-bottom: 1px solid #333333;
+    }
+
+    .window-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .window-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .dot-red { background-color: #FF5F56; }
+    .dot-yellow { background-color: #FFBD2E; }
+    .dot-green { background-color: #27CA40; }
+
+    .terminal-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #666666;
+    }
+
+    .terminal-close {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      color: #666666;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    .terminal-close:hover {
+      color: #999999;
+    }
+
+    .terminal-content {
+      flex: 1;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      overflow-y: scroll;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .terminal-content::-webkit-scrollbar {
+      display: none;
+    }
+
+    .term-line {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      min-height: 1.4em;
+    }
+
+    .term-cmd { color: #27CA40; }
+    .term-output { color: #AAAAAA; }
+    .term-highlight { color: #22D3EE; }
+
     /* Mobile adjustments */
     @media (max-width: 480px) {
       body {
@@ -240,6 +410,14 @@
       .footer-text {
         font-size: 10px;
       }
+
+      .terminal-window {
+        height: 340px;
+      }
+
+      .term-line {
+        font-size: 11px;
+      }
     }
 
     /* Very small screens */
@@ -264,12 +442,25 @@
       .copy-hint {
         display: none;
       }
+
+      .terminal-window {
+        height: 300px;
+      }
+
+      .term-line {
+        font-size: 10px;
+      }
+
+      .terminal-content {
+        padding: 12px;
+        gap: 3px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="photos/image.png" alt="Rob Maye" class="photo">
+    <img src="photos/image.png" alt="Rob Maye" class="photo" onclick="fixPhoto()">
     <div class="info">
       <p class="tagline">// wanted for bad code and bad jokes</p>
       <div class="divider"></div>
@@ -302,10 +493,34 @@
         <span class="email-text">rob@robmaye.me</span>
         <span class="copy-hint" id="copy-hint">· tap to copy</span>
       </div>
+      <div class="terminal-row">
+        <button class="terminal-btn" onclick="openTerminal()" aria-label="Open terminal">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="4 17 10 11 4 5"></polyline>
+            <line x1="12" y1="19" x2="20" y2="19"></line>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
   <div class="footer">
     <p class="footer-text">No tracking · No cookies · No criminal record</p>
+  </div>
+
+  <!-- Terminal Overlay -->
+  <div class="terminal-overlay" id="terminal-overlay">
+    <div class="terminal-window">
+      <div class="terminal-header">
+        <div class="window-dots">
+          <div class="window-dot dot-red"></div>
+          <div class="window-dot dot-yellow"></div>
+          <div class="window-dot dot-green"></div>
+        </div>
+        <span class="terminal-title">rob@robmaye.me</span>
+        <span class="terminal-close" onclick="closeTerminal()">×</span>
+      </div>
+      <div class="terminal-content" id="terminal-content"></div>
+    </div>
   </div>
 
   <script>
@@ -338,6 +553,214 @@
     // Update time immediately and then every 10 seconds
     updateSingaporeTime();
     setInterval(updateSingaporeTime, 10000);
+
+    // Terminal animation script
+    const terminalScript = [
+      { type: 'cmd', text: 'boot' },
+      { type: 'out', lines: [
+        '[  0.000000] robOS 26.2 (contact-card) starting...',
+        '[  0.003131] Initializing sarcasm subsystem... ok',
+        '[  0.004206] Loading modules: git, coffee, docker, regex, questionable_humour... ok',
+        '[  0.006900] Mounting /dev/patience (read-only)... ok',
+        '[  0.009001] Applying patch: "works on my machine"... denied',
+        '[  0.012345] Starting services:',
+        '             - api: listening (but only if you sent the right headers)',
+        '             - sql: ready to index your feelings',
+        '             - logs: enabled (because obviously)',
+        '[  0.018888] Warning: unknown device detected: "printer"',
+        '[  0.020024] Printer driver missing: yes. still. forever.',
+        '[  0.024000] Ready.',
+        ''
+      ]},
+      { type: 'cmd', text: 'whoami' },
+      { type: 'out', lines: ['rob', 'Head of IT / software dev', 'wanted for: bad code and bad jokes', ''] },
+      { type: 'cmd', text: 'status' },
+      { type: 'out', lines: ['uptime: too long', 'sleep: deprecated', 'meetings: escalating', 'excuses: caching disabled', 'merge conflicts: thriving', ''] },
+      { type: 'cmd', text: 'ls -la' },
+      { type: 'out', lines: ['drwxr-xr-x  contact/', 'drwxr-xr-x  projects/', 'drwxr-xr-x  tools/', '-rw-------  secrets.txt        (nice try)', '-rw-r--r--  README.md', '-rw-r--r--  todo.txt', ''] },
+      { type: 'cmd', text: 'cat README.md' },
+      { type: 'out', lines: ['Hi. I build systems that mostly behave.', 'If it broke, it was DNS.', "If it wasn't DNS, it was still DNS.", ''] },
+      { type: 'cmd', text: 'cat todo.txt' },
+      { type: 'out', lines: ['[ ] fix one tiny thing', '[ ] accidentally refactor everything', '[ ] pretend it was planned', ''] },
+      { type: 'cmd', text: 'git status' },
+      { type: 'out', lines: ['On branch: main', 'Your branch is ahead by 3 commits and 1 regrettable decision.', 'nothing to commit, working tree clean (suspicious)', ''] },
+      { type: 'cmd', text: 'make coffee' },
+      { type: 'out', lines: ["make: *** No rule to make target 'coffee'. Stop.", 'hint: have you tried turning yourself off and on again?', ''] },
+      { type: 'cmd', text: 'docker ps' },
+      { type: 'out', lines: ['CONTAINER ID   NAME              STATUS', 'a1b2c3d4e5f6   prod              Up (somehow)', 'deadbeefcafe   staging           Up (lying)', 'f00dbabe1337   "quick-fix"       Restarting (forever)', ''] },
+      { type: 'cmd', text: 'curl -s https://life' },
+      { type: 'out', lines: ['curl: (28) Operation timed out after 30m: meeting extended', ''] },
+      { type: 'cmd', text: 'help' },
+      { type: 'out', lines: ['available commands:', '- about', '- contact', '- skills', '- joke', '- fortune', '- clear', '- selfdestruct', '- exit', ''] },
+      { type: 'cmd', text: 'about' },
+      { type: 'out', lines: ['I like clean architecture, ugly truths, and logs with timestamps.', 'I dislike: vague tickets, mystery requirements, and "can we hop on a quick call".', ''] },
+      { type: 'cmd', text: 'skills' },
+      { type: 'out', lines: ['C#        : yes', 'SQL       : yes (and I will judge your indexes)', "Python    : yes (but I'll still make it a CLI)", 'Docker    : yes', 'CSS       : I know enough to be dangerous', ''] },
+      { type: 'cmd', text: 'joke' },
+      { type: 'out', lines: ['There are 10 types of people:', 'those who understand binary, and those who also understand that this joke is ancient.', ''] },
+      { type: 'cmd', text: 'fortune' },
+      { type: 'out', lines: ['You will fix the bug by adding one line.', 'Later you will discover what that line actually did.', ''] },
+      { type: 'cmd', text: 'contact' },
+      { type: 'out', lines: ['email: rob@robmaye.me', 'github: click the icon like a normal person', 'linkedin: if you must', ''] },
+      { type: 'cmd', text: 'clear' },
+      { type: 'out', lines: ['(terminal cleared)', ''] },
+      { type: 'cmd', text: 'selfdestruct' },
+      { type: 'out', lines: ['This will delete absolutely everything (emotionally).'] },
+      { type: 'prompt', text: 'Are you sure? (y/N) ', response: 'y' },
+      { type: 'prompt', text: 'Are you really sure? (y/N) ', response: 'y' },
+      { type: 'prompt', text: 'Ok. Last chance. Type YES to continue: ', response: 'YES' },
+      { type: 'fast', lines: [
+        '',
+        '[  1%] deleting: ./todo.txt',
+        '[  4%] deleting: ./quick-fix-final-v7-really-final.sql',
+        '[  7%] deleting: ./prod-config (why is this here)',
+        '[ 12%] deleting: ./meeting-notes (good)'
+      ]},
+      { type: 'panic', text: 'no no no cancel cancel cancel' },
+      { type: 'fast', lines: [
+        '[ 18%] deleting: ./css (nobody will miss it)',
+        '[ 25%] deleting: ./docker (it\'ll be back in 5 minutes)',
+        '[ 33%] deleting: ./README.md (bold move)'
+      ]},
+      { type: 'panic', text: '^C^C^C^C^C^C^C^C^C' },
+      { type: 'fast', lines: ['SIGINT ignored: confidence level too high'] },
+      { type: 'fast', lines: [
+        '[ 41%] deleting: ./unit-tests (couldn\'t find any)',
+        '[ 49%] deleting: ./good-ideas (none detected)',
+        '[ 57%] deleting: ./patience'
+      ]},
+      { type: 'panic', text: '^C^C^C^C^C' },
+      { type: 'fast', lines: ['selfdestruct: continuing (because of course it is)'] },
+      { type: 'fast', lines: [
+        '[ 63%] deleting: ./calendar (freed 8 hours)',
+        '[ 71%] deleting: ./git-history (sorry)',
+        '[ 79%] deleting: ./last-working-version (tragic)',
+        '[ 86%] deleting: ./confidence (not enough space)',
+        '[ 93%] deleting: ./production (again)',
+        '[ 99%] deleting: ./feelings',
+        ''
+      ]},
+      { type: 'fast', lines: ['kernel: panic: user has learned nothing', 'terminal: segmentation fault (core dumped)', 'Connection closed.'] }
+    ];
+
+    let terminalRunning = false;
+    let terminalAbort = false;
+
+    function openTerminal() {
+      if (terminalRunning) return;
+      document.getElementById('terminal-overlay').classList.add('active');
+      document.getElementById('terminal-content').innerHTML = '';
+      terminalAbort = false;
+      runTerminalAnimation();
+    }
+
+    function closeTerminal() {
+      terminalAbort = true;
+      terminalRunning = false;
+      document.getElementById('terminal-overlay').classList.remove('active');
+    }
+
+    function fixPhoto() {
+      document.querySelector('.photo').classList.remove('corrupted');
+    }
+
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    function getRandomDelay(base, variance) {
+      return base + (Math.random() - 0.5) * variance;
+    }
+
+    async function typeText(element, text, baseDelay = 40) {
+      for (let i = 0; i < text.length; i++) {
+        if (terminalAbort) return;
+        element.textContent += text[i];
+        scrollTerminal();
+        await sleep(getRandomDelay(baseDelay, baseDelay * 0.8));
+      }
+    }
+
+    function scrollTerminal() {
+      const content = document.getElementById('terminal-content');
+      content.scrollTop = content.scrollHeight;
+    }
+
+    function createLine(className = '') {
+      const line = document.createElement('p');
+      line.className = 'term-line' + (className ? ' ' + className : '');
+      document.getElementById('terminal-content').appendChild(line);
+      return line;
+    }
+
+    async function runTerminalAnimation() {
+      terminalRunning = true;
+      const prompt = 'rob@robmaye:~$ ';
+
+      for (const item of terminalScript) {
+        if (terminalAbort) break;
+
+        if (item.type === 'cmd') {
+          // Command: show prompt immediately
+          const line = createLine('term-cmd');
+          line.textContent = prompt;
+          scrollTerminal();
+          // Random pause (1-3 seconds) to simulate user reading/thinking
+          await sleep(1000 + Math.random() * 2000);
+          // Then type the command
+          await typeText(line, item.text, 55);
+          await sleep(100);
+          // Add newline effect
+          createLine();
+        }
+        else if (item.type === 'out') {
+          // Output: display lines quickly
+          for (const text of item.lines) {
+            if (terminalAbort) break;
+            const line = createLine('term-output');
+            line.textContent = text;
+            scrollTerminal();
+            await sleep(50);
+          }
+        }
+        else if (item.type === 'prompt') {
+          // Interactive prompt: show prompt text, then type response
+          const line = createLine('term-output');
+          line.textContent = item.text;
+          scrollTerminal();
+          await sleep(300);
+          await typeText(line, item.response, 75);
+          await sleep(200);
+        }
+        else if (item.type === 'panic') {
+          // Panic typing: fast frantic typing
+          const line = createLine('term-cmd');
+          await typeText(line, item.text, 30);
+          await sleep(100);
+        }
+        else if (item.type === 'fast') {
+          // Fast output: no pause after, for sequences that flow together
+          for (const text of item.lines) {
+            if (terminalAbort) break;
+            const line = createLine('term-output');
+            line.textContent = text;
+            scrollTerminal();
+            await sleep(80);
+          }
+        }
+      }
+
+      // Final pause then close
+      if (!terminalAbort) {
+        await sleep(1500);
+        closeTerminal();
+        // Hide the terminal button after animation completes
+        document.querySelector('.terminal-row').style.display = 'none';
+        // Corrupt the photo as if the selfdestruct damaged it
+        document.querySelector('.photo').classList.add('corrupted');
+      }
+      terminalRunning = false;
+    }
   </script>
 </body>
 </html>
