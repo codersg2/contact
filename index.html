@@ -54,7 +54,7 @@
     .tagline {
       font-family: 'JetBrains Mono', monospace;
       font-size: 12px;
-      color: #888888;
+      color: #a0a0a0;
       text-align: center;
     }
 
@@ -318,7 +318,7 @@
         hour12: false
       };
       const timeString = now.toLocaleTimeString('en-GB', options);
-      document.getElementById('singapore-time').textContent = timeString + ' SGT';
+      document.getElementById('singapore-time').innerHTML = timeString + ' SGT <span style="font-size: 0.8em; opacity: 0.7;">(UTC+8)</span>';
     }
 
     function copyEmail() {
